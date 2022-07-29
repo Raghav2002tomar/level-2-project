@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+<!--       
+        <style>
+          
+          
+            .a{grid-area: a;}
+            .b{grid-area: b;}
+            .c{grid-area: c;}
+            .d{grid-area: d;}
+            .e{grid-area: e;}
+
+            .container{
+                display: grid;
+                grid-template-areas: 'a a b c'
+                'd e e c';
+                gap:30px;
+                border:100px solid white;
+            }
+            .a{
+                height:350px;
+                background-color: #4f3db8;
+                border-radius: 15px;
+                
+
+                
+            }
+            .b{
+                height:350px;
+                background-color: #154f52;
+                border-radius: 15px;
+
+            }
+            .c{
+                height: 740px;
+                background-color: #dce0dfda;
+                border-radius: 15px;
+               
+            }
+            .d{
+                background-color: #dce0dfda;
+                height: 350px
+                border-radius: 15px;
+
+            }
+            .e{
+                background-color: #09091b;
+                height: 350px;
+                border-radius: 15px;
+              
+
+            }
+            
+            .img-1{
+               
+                padding-top: 20px;
+                padding-left: 20px;  
+               
+            }
+            .name-l1{
+                color: white;
+                padding-left: 10px;
+               display: inline;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .name-l2{
+                color: hwb(0 100% 0% / 0.274);
+                padding-left: 90px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .main-line1{
+              color: white;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              padding-left: 40px;
+              padding-top: 20px;
+            }
+            .main-line2{
+              color: hwb(0 100% 0% / 0.274) ;
+              font-size: 15px;
+              padding-left: 40px;
+              padding-right: 40px;
+              padding-top: 20px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+         
+            .img-2{
+                padding-top: 20px;
+                padding-left: 20px;
+                }
+                .bname-l1{
+                    color: white;
+                padding-left: 10px;
+               display: inline;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+                }
+                .bname-l2{
+                    color: hwb(0 100% 0% / 0.274);
+                padding-left: 90px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                .bmain-l1{
+                    color: white;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              padding-left: 40px;
+              padding-top: 20px;
+                }
+                .bmain-l2{
+                    color: hwb(0 100% 0% / 0.274) ;
+              font-size: 15px;
+              padding-left: 40px;
+              padding-top: 20px;
+              padding-right: 40px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            .img-3{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .cname-l1{
+              color: black;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              padding-left: 10px;
+              display: inline;
+            }
+            .cname-l2{
+              color: rgba(15, 19, 18, 0.315);
+              padding-left: 90px;
+            }
+            .cmain-l1{
+             color: black;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             padding-left: 40px;
+             padding-top: 20px;
+            }
+            .cmain-l2{
+              color: rgba(15, 19, 18, 0.315);
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              padding-left: 40px;
+              padding-top: 20px;
+              padding-right: 40px;
+            }
+            .img-4{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .dname-l1{
+                color: black;
+                padding-left: 10px;
+               display: inline;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+              
+            }
+            .dname-l2{
+                color: rgba(15, 19, 18, 0.315);
+              padding-left: 90px;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+            .dmain-l1{
+               color: black;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             padding-left: 40px;
+             padding-top: 20px;
+            }
+            .dmain-l2{
+                color: #0f0f0f50;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              padding-left: 40px;
+              padding-top: 20px;
+              padding-right: 40px;
+            }
+            .img-5{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            .ename-l1{
+                padding-left: 10px;
+                color: white;
+               display: inline;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .ename-l2{
+                padding-left: 90px;
+                color: hwb(0 100% 0% / 0.274) ;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .emain-l1{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: white;
+              padding-left: 40px;
+              padding-top: 20px;
+              padding-right: 40px;
+            }
+            .emain-l2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: hwb(0 100% 0% / 0.274) ;
+              padding-left: 40px;
+              padding-top: 20px;
+              padding-right: 40px;
+            }
+           
+          
+         
+
+        </style> -->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="a"> <img class="img-1" src="image-daniel.jpg">
+            <div class="name-l1">Daniel Clifford</div>
+            <div class="name-l2">Verified Graduate</div>
+            <div class="main-line1">I received job offer mid-cource, and the subjucts I learned<br> were current, if not more so, in the company I joined. I <br>honestly feel I got every panny's worth. </div>
+            <div class="main-line2"> "I was an ENT for many Years before i joined i joined the bootcamp.i've been looking to make a<br> transition and some people who had an amazing experience here. i signed up for <br> the free intro cource and found it incredibly fun! enrolled shortly thereafter. the next 12 <br> weeks was the best - and most gurelling - time of my since completing the cource, i've <br>successully switched careers, working as a Software Engineer at a VR startup." </div>
+
+            </div>
+            <div class="b"> <img class="img-2" src="image-jonathan.jpg">
+            <div class="bname-l1"> Jonathan Walters</div>
+            <div class="bname-l2">Verified Graduate </div>
+            <div class="bmain-l1"> The team was very <br> supportive and kept me<br> motivated</div>
+            <div class="bmain-l2"> " i Started as a total newbite with<br> virtially no coding skill. i now work <br> as a mobile engineer for a big <br> company. this was one of the best <br> investment i've made in myself."</div>
+            </div>
+            <div class="c"><img class="img-3" src="image-kira.jpg">
+            <div class="cname-l1">Kira Whittle</div>
+            <div class="cname-l2">Verified Graduate</div>
+            <div class="cmain-l1">Such a life-changing<br> experience. Highly<br> recommended! </div>
+            <div class="cmain-l2">" Before joining the bootcamp.i've <br>never written a line af code. i needed<br>some stretuew from professionals<br> who can help ne learn programming<br> step bt step. i was encueaged to<br> enroll by a former stdent af theirs <br> who can only say wonderful things <br> about the program . the entire<br> curroclum and staff did not <br> disappoint. They were very hands-on <br> and i never had to wait long for<br> assistance. The agail team project , in<br>particular, was outstanding it look <br> my learning to the next level in a way<br> that no tutorial could ever have. in <br> fact,i've often erferrd to it during <br> interviews as an example of my <br> developent experience.it Certainly<br> helped ne land a job asa full-stack <br> developer after receiving miltiple<br> affera. 100% recimmend!" <br>   </div>
+            </div>
+            <div class="d"><img class="img-4" src="image-jeanette.jpg">
+            <div class="dname-l1">Jeanette Harmon</div>
+            <div class="dname-l2">Verified Graduate</div>
+            <div class="dmain-l1"> An overall wonderful<br> and rewarding<br> experience</div>
+            <div class="dmain-l2">" Thank you for the wonderful<br> experience! I know have a job i realty<br> enjoy. and make a good living while<br> doing something i love."</div>
+            </div>
+            <div class="e"><img class="img-5" src="image-patrick.jpg">
+            <div class="ename-l1">Patrick Abrams</div>
+            <div class="ename-l2"> Verified Graduate</div>
+            <div class="emain-l1">Awesome teaching support from TAs who did the bootcamp<br> themselves. getting guidance from them and learning from<br> their experience was easy.</div>
+            <div class="emain-l2">" The staff seem genuinely concerrd about my progess which i find reallyrefeshing. the<br> program gave me the confidence necessary to be able to go out in the world and present <br>myself as a capable junier developer.The standard is about the rest. You will get the <br> personal attention you need from an oncredible commimity of smart and amazingpeople." </div>
+            </div>
+        </div>
+    </body>
+</html>
